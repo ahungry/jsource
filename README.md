@@ -18,6 +18,7 @@ mkdir -p ~/jbld/$BUILD_TARGET/bin
 mkdir ~/gitdev
 git clone https://github.com/ahungry/jsource.git ~/gitdev/jsource
 ln -s ~/gitdev/jsource/make/jvars.sh ~/jvars.sh
+cp ~/gitdev/jsource/jsrc/jversion-x.h ~/gitdev/jsource/jsrc/jversion.h
 ~/gitdev/jsource/make/build_all.sh $BUILD_TARGET
 
 # At this point, everything should be built, so run with:
